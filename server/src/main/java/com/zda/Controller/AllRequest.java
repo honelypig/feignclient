@@ -126,4 +126,9 @@ public class AllRequest {
 			System.out.println(p.getId() + "===" + p.getAge() + "===" + p.getName());	
 		});
 	}
+	
+	@GetMapping("/hellowd")
+	public String testMyUrl(){
+		return "success";
+	}
 }

@@ -86,4 +86,8 @@ private UserHttpClient userHttpClient;
 
 		return lista.getResulT();
 	}
-}
+	@GetMapping(value="hello")
+	public String  say(){
+		return userHttpClient.myHello()+"=>hello";
+		}
+	}

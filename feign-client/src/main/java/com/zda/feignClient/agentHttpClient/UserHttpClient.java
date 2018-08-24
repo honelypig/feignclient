@@ -13,6 +13,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 
+import com.zda.feign.mycontract.MyUrl;
 import com.zda.feignClient.dtos.ApiResult;
 import com.zda.feignClient.dtos.Person;
 
@@ -56,5 +57,7 @@ public interface UserHttpClient {
 	/*------------------delete----------------------*/
 	@DeleteMapping(value="PersonList",consumes="application/json")
 	public void deletePersonList(List<Person> p, @RequestParam("msg") String msg);
-
+	/*------------------myurl----------------------*/
+	@MyUrl(url = "/hellowd", method = "GET")
+	public String myHello();
 }
