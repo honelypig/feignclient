@@ -1,0 +1,7 @@
+server:
+  port: 8081
+feign:
+  httpclient:
+    enabled: true
+addr:
+  serverUrl: http://127.0.0.1:8082

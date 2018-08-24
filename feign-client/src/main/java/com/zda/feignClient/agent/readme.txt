@@ -1,0 +1,1 @@
+这是一般项目使用feign，不需要启动springboot
